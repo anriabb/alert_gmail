@@ -30,6 +30,17 @@ To use this script with a Gmail account, you **cannot** use your regular login p
 ## 🚀 Quick Start
 
 ### 1. Clone the Repository
-```bash
+
 git clone [https://github.com/anriabb/alert_gmail.git](https://github.com/anriabb/alert_gmail.git)
 cd alert_gmail
+
+---
+
+📄 License
+Distributed under the MIT License. See LICENSE for more information.
+
+<p align="center">
+<b>Developed by <a href="https://www.google.com/search?q=https://github.com/anriabb">anriabb</a></b>
+</p>
+
+```bash
