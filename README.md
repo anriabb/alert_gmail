@@ -41,6 +41,4 @@ Distributed under the MIT License. See LICENSE for more information.
 
 <p align="center">
 <b>Developed by <a href="https://www.google.com/search?q=https://github.com/anriabb">anriabb</a></b>
-</p>
-
-```bash
+</p>```bash
