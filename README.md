@@ -1,86 +1,35 @@
-Simple Gmail SMTP Email Sender (Python)
+# 📧 Alert Gmail Sender
 
-This project is a minimal Python script that sends a plain-text email using Gmail SMTP over SSL.
+![Python Version](https://img.shields.io/badge/python-3.6%2B-blue?logo=python&logoColor=white)
+![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
-📌 Features
+A simple, robust Python utility for sending automated email alerts via Gmail's SMTP server using SSL encryption.
 
-Sends a simple email (subject + body)
+---
 
-Uses Gmail’s SMTP server
-
-Secure SSL connection
-
-Minimal dependencies (standard library only)
-
-📁 File Structure
-.
-├── send_email.py
-└── README.md
-
-🛠 Requirements
-
-Python 3.7+
-
-A Gmail account
-
-Gmail App Password (required if 2FA is enabled)
-
-🔐 Important: Gmail App Password
-
-Google does not allow normal account passwords for SMTP.
-
-Enable 2-Step Verification on your Google account
-
-Go to Google Account → Security → App passwords
-
-Generate an app password for Mail
-
-Use that password in SMTP_PASS
-
-⚙️ Configuration
-
-Edit the following variables in the script:
-
-SMTP_HOST = "smtp.gmail.com"
-SMTP_PORT = 465
-SMTP_USER = "example@gmail.com"
-SMTP_PASS = "your_app_password"
-
-SENDER = "example@gmail.com"
-RECIPIENT = "example@gmail.com"
+## 🏗 How it Works
+This script establishes a secure connection to Google's mail servers to dispatch plain-text emails. It uses a context manager to ensure the connection is safely closed after transmission.
 
 
-⚠️ Do NOT commit real credentials to GitHub.
-Use environment variables for production.
 
-▶️ Usage
+---
 
-Run the script:
+## 📋 Prerequisites
 
-python send_email.py
+To use this script with a Gmail account, you **cannot** use your regular login password. You must:
 
+1.  **Enable 2-Step Verification** in your [Google Account Settings](https://myaccount.google.com/).
+2.  **Generate an App Password**:
+    * Go to [App Passwords](https://myaccount.google.com/apppasswords).
+    * Select `Mail` and `Other (Custom name)`.
+    * Copy the generated **16-character code**.
 
-If successful, you’ll see:
+---
 
-Email sent
+## 🚀 Quick Start
 
-📧 Example Function Call
-send_simple_email("Hello", "This is a test email.")
-
-🚨 Common Errors
-Error	Cause	Fix
-Authentication failed	Wrong password	Use Gmail App Password
-TimeoutError	Network / firewall issue	Check internet or SMTP port
-SMTPAuthenticationError	Less secure apps disabled	Enable App Passwords
-🔒 Security Tips
-
-Never hardcode credentials in public repos
-
-Use environment variables:
-
-export SMTP_USER="example@gmail.com"
-export SMTP_PASS="app_password"
-
-📄 License
-
-This project is provided for educational purposes. Use at your own risk.
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/anriabb/alert_gmail.git](https://github.com/anriabb/alert_gmail.git)
+cd alert_gmail
